@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post">
+{% csrf_token %}
+<p>are u sure about delete</p>
+<input type="submit" value="delete">
+<a href="http://127.0.0.1:8000/sview/">cancel</a>
+</form>
+{% endblock %}

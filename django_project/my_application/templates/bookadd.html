@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post">
+{% csrf_token %}
+<label for="">b_name</label>
+<input type="text" name="bname" required>
+<label for="">pub_date</label>
+<input type="date" name="pubdate" required>
+<input type="submit" value="submit">
+
+
+
+</form>
+{% endblock %}
